@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
     <div id="header">
 
@@ -34,27 +36,29 @@
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-tittle">About Me</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque provident facilis quae ratione adipisci dolore quidem id laborum, molestias cupiditate consequuntur voluptas magnam quia, doloribus illum dolorum vitae totam.</p>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque provident facilis quae
+                        ratione adipisci dolore quidem id laborum, molestias cupiditate consequuntur voluptas magnam
+                        quia, doloribus illum dolorum vitae totam.</p>
                     <div class="tab-tittle">
-                        <p class="tab-links active-link">Skills</p>
-                        <p class="tab-links">Experience</p>
-                        <p class="tab-links">Eduction</p>
+                        <p class="tab-links active-link" onclick="select(skill)">Skills</p>
+                        <p class="tab-links " onclick="select(experience)">Experience</p>
+                        <p class="tab-links" onclick="select(education)">Eduction</p>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents   active-tab" id="skill">
                         <ul>
                             <li><span>Web site</span><br>Desining web/App interface</li>
                             <li><span>Web Development</span><br>Desining web/App Development</li>
                             <li><span>App Development</span><br>Building Apps</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="experience">
                         <ul>
                             <li><span>2024-current</span><br>Python Full-Stack Training at SynnefoSolutions</li>
                             <li><span>2022-2023</span><br>Software Engineer at</li>
                             <li><span>2021-2022</span><br>internship at SMEC-Lab</li>
                         </ul>
                     </div>
-                    <div class="tab-contents">
+                    <div class="tab-contents" id="education">
                         <ul>
                             <li><span>2024</span><br>Deploma From GPTC kunnamkulam</li>
                             <li><span>2021</span><br>Higher Secondary</li>
@@ -65,5 +69,62 @@
             </div>
         </div>
     </div>
+    <div class="services">
+        <div class="container">
+            <h1 class="sub-tittle">My services</h1>
+            <div class="services-list">
+                <div>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem magnam maxime illum placeat
+                        laudantium sunt suscipit, dolor nobis temporibus saepe recusandae nisi ducimus ullam pariatur
+                        molestias quaerat laborum ipsa id?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>Web Develeping</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem magnam maxime illum placeat
+                        laudantium sunt suscipit, dolor nobis temporibus saepe recusandae nisi ducimus ullam pariatur
+                        molestias quaerat laborum ipsa id?</p>
+                    <a href="#">Learn More</a>
+                </div>
+                <div>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptatem magnam maxime illum placeat
+                        laudantium sunt suscipit, dolor nobis temporibus saepe recusandae nisi ducimus ullam pariatur
+                        molestias quaerat laborum ipsa id?</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="portfolio">
+        <div class="container">
+            <h1 class="sub-tittle">My Work</h1>
+            <div class="work-list">
+                
+            </div>
+        </div>
+    </div>
+
+
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function select(tabname) {
+
+            for (tl of tablinks) {
+                tl.classList.remove("active-link");
+            }
+            for (tb of tabcontents) {
+                tb.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link")
+            document.getElementById("tabname").classList.add(" active-tab")
+        }
+    </script>
 </body>
+
 </html>
