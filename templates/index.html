@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
-    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="../static/index.css">
 </head>
 
 <body>
@@ -32,7 +32,7 @@
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="img/profile.avif" alt="">
+                    <img src="../static/img/profile.avif" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-tittle">About Me</h1>
@@ -40,29 +40,30 @@
                         ratione adipisci dolore quidem id laborum, molestias cupiditate consequuntur voluptas magnam
                         quia, doloribus illum dolorum vitae totam.</p>
                     <div class="tab-tittle">
-                        <p class="tab-links active-link" onclick="select(skill)">Skills</p>
-                        <p class="tab-links " onclick="select(experience)">Experience</p>
-                        <p class="tab-links" onclick="select(education)">Eduction</p>
+                        <p class="tab-links active-link" onclick="select(event,'skill')">Skills</p>
+                        <p class="tab-links " onclick="select(event,'experience')">Experience</p>
+                        <p class="tab-links" onclick="select(event,'education')">Eduction</p>
                     </div>
-                    <div class="tab-contents   active-tab" id="skill">
+                    <div class="tab-contents active-tab  " id="skill">
                         <ul>
                             <li><span>Web site</span><br>Desining web/App interface</li>
                             <li><span>Web Development</span><br>Desining web/App Development</li>
-                            <li><span>App Development</span><br>Building Apps</li>
+                            <!-- <li><span>App Development</span><br>Building Apps</li> -->
                         </ul>
                     </div>
-                    <div class="tab-contents" id="experience">
+                    <div class="tab-contents active-tab" id="experience">
                         <ul>
                             <li><span>2024-current</span><br>Python Full-Stack Training at SynnefoSolutions</li>
-                            <li><span>2022-2023</span><br>Software Engineer at</li>
+                            <!-- <li><span>2022-2023</span><br>Software Engineer at</li> -->
                             <li><span>2021-2022</span><br>internship at SMEC-Lab</li>
                         </ul>
                     </div>
                     <div class="tab-contents" id="education">
                         <ul>
+                            <li><span>2025</span><br>Python-Full-Stack From SynnefoSolutions</li>
                             <li><span>2024</span><br>Deploma From GPTC kunnamkulam</li>
                             <li><span>2021</span><br>Higher Secondary</li>
-                            <li><span>2021</span><br>Higher Secondary</li>
+                            
                         </ul>
                     </div>
                 </div>
@@ -102,22 +103,22 @@
             <h1 class="sub-tittle">My Work</h1>
             <div class="work-list">
                 <div class="work">
-                    <a href="">
-                    <img src="img/work1.png" alt="">
+                    <a href="https://anandpb44.github.io/cromaclone/">
+                    <img src="../static/img/work1.png" alt="">
                 </a>
                 </div>
                 <div class="work">
-                    <a href="">
-                    <img src="img/work2.png" alt="">
+                    <a href="https://anandpb44.github.io/chempakam-clone/chempakam/">
+                    <img src="../static/img/work2.png" alt="">
                 </a>
                 </div>
                 <div class="work">
-                    <a href="">
-                    <img src="img/work3.png" alt="">
+                    <a href="https://anandpb44.github.io/sample/Bookmyshow/">
+                    <img src="../static/img/work3.png" alt="">
                 </a>
                 </div>
             </div>
-            <a href="" class="btn">See More</a>
+            <!-- <a href="" class="btn">See More</a> -->
         </div>  
     </div>
 <div id="contact">
@@ -156,22 +157,8 @@
 </div>
 
 
-    <script>
-        var tablinks = document.getElementsByClassName("tab-links")
-        var tabcontents = document.getElementsByClassName("tab-contents")
-
-        function select(tabname) {
-
-            for (tl of tablinks) {
-                tl.classList.remove("active-link");
-            }
-            for (tb of tabcontents) {
-                tb.classList.remove("active-tab");
-            }
-
-            event.currentTarget.classList.add("active-link")
-            document.getElementById("tabname").classList.add(" active-tab")
-        }
+    <script src="../static/js/script.js">
+        
     </script>
 </body>
 

@@ -267,9 +267,95 @@ form .btn2{
 
 
 
-@media only screen and(max-width:600px) {
+@media screen and (max-width: 1024px) {
+    /* Adjust header text */
+    .header-text h1 {
+        font-size: 50px;
+    }
 
-    #header{
-        background-image: none;
+    /* Adjust layout for services */
+    .services-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Adjust for portfolio grid */
+    .work-list {
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    }
+
+    /* Adjust tabs */
+    .tab-links {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    /* Adjust header text */
+    .header-text h1 {
+        font-size: 40px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    /* Stack navigation items vertically */
+    nav ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    /* Adjust column layout for about section */
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .about-col-1,
+    .about-col-2 {
+        flex-basis: 100%;
+    }
+
+    /* Adjust form inputs */
+    form input,
+    form textarea {
+        font-size: 16px;
+    }
+
+    /* Adjust portfolio images */
+    .work img {
+        height: auto;
+        max-width: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    /* Adjust header text further */
+    .header-text h1 {
+        font-size: 30px;
+    }
+
+    /* Stacked layout for services */
+    .services-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Stacked layout for portfolio */
+    .work-list {
+        grid-template-columns: 1fr;
+    }
+
+    /* Adjust buttons */
+    .btn {
+        padding: 12px 40px;
+    }
+
+    .icons a {
+        font-size: 24px;
     }
 }
