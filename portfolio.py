@@ -12,8 +12,10 @@ app.config['MAIL_DEFAULT_SENDER'] = 'your_email@gmail.com'
 mail = Mail(app) 
 
 
+@app.route('/')
 @app.route('/index')
-def Index():
+
+def index():
     return render_template('index.html')
 
 

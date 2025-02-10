@@ -151,7 +151,7 @@
                 <a href="img/bb.webp"  download class="btn btn2">CV</a>
             </div>
             <div class="right">
-                <form action="">
+                <form action="{{ url_for('contact') }}" method="post">
                     <input type="text" name="name" id="" placeholder="Your Name" required>
                     <input type="email" name="email" id="" placeholder="Your Email" required>
                     <textarea name="message" id="" placeholder="Your Message"></textarea>
