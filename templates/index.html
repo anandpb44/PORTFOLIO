@@ -14,13 +14,19 @@
         <div class="container">
             <nav>
 
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">SERVICE</a></li>
-                    <li><a href="#">PORTFOLIO</a></li>
-                    <li><a href="#">CONTACT</a></li>
+                <ul id="menubar">
+                    <li><a href="#header">HOME</a></li>
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#services">SERVICE</a></li>
+                    <li><a href="#portfolio">PORTFOLIO</a></li>
+                    <li><a href="#contact">CONTACT</a></li>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="white" class="bi bi-x" onclick=" closemenu() " viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708"/>
+                      </svg>
                 </ul>
+                <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="white" class="bi bi-list" onclick=" openmenu()" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+                  </svg>
             </nav>
             <div class="header-text">
                 <p>Python Full-Stack Developer</p>
@@ -28,11 +34,11 @@
             </div>
         </div>
     </div>
-    <div class="about">
+    <div id="about">
         <div class="container">
             <div class="row">
                 <div class="about-col-1">
-                    <img src="../static/img/profile.avif" alt="">
+                    <img src="../static/img/pro.jpeg" alt="">
                 </div>
                 <div class="about-col-2">
                     <h1 class="sub-tittle">About Me</h1>
@@ -70,7 +76,7 @@
             </div>
         </div>
     </div>
-    <div class="services">
+    <div id="services">
         <div class="container">
             <h1 class="sub-tittle">My services</h1>
             <div class="services-list">
@@ -98,7 +104,7 @@
             </div>
         </div>
     </div>
-    <div class="portfolio">
+    <div id="portfolio">
         <div class="container">
             <h1 class="sub-tittle">My Work</h1>
             <div class="work-list">
