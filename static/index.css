@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 html{
-    scroll-behavior: smooth;
+    scroll-behavior: auto;
 }
 body{
     background: #080808;
@@ -23,9 +23,12 @@ body{
     padding: 10px 10%;
 }
 nav{
+
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: fixed;
+    top: 0;
     flex-wrap: wrap;
 }
 
