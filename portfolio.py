@@ -13,10 +13,10 @@ mail = Mail(app)
 
 
 @app.route('/')
-@app.route('/index')
+@app.route('/index1')
 
 def index():
-    return render_template('index.html')
+    return render_template('index1.html')
 
 
 @app.route('/contact', methods=['POST'])
@@ -36,7 +36,7 @@ def contact():
         try:
             # Send the email
             mail.send(msg)
-            return redirect(url_for('index'))  # Redirect to homepage after sending the message
+            return redirect(url_for('index1'))  # Redirect to homepage after sending the message
         except Exception as e:
             print(f"Error sending email: {e}")
             return "There was an error sending your message. Please try again later."
